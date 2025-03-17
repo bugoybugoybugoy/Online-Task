@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tasks</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/home page phone.css">
+    <link rel="stylesheet" href="../CSS/home page.css">
+</head>
+<body>
+
+    <header class="server-header">
+        <h3>10.101.1.1</h3>
+    </header>
+
+    <div class="container">
+        <div class="left-section">
+            <h1>MY ONLINE TASKS</h1>
+            <p>STAY ON TRACK!!!</p>
+
+            <button id="openAddTask" class="task-button">Add New Task</button>
+            <button id="sortByDeadline" class="task-button">Sort by Deadline</button>
+            <button id="uploadTask" class="task-button">Upload Task</button>
+        </div>
+
+        <div class="task-list">
+        </div>
+    </div>
+
+    <div id="addTaskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            
+            <label for="taskTitle">Task Title:</label>
+            <input type="text" id="taskTitle" placeholder="Enter task title">
+
+            <label for="taskSubject">Subject:</label>
+            <input type="text" id="taskSubject" placeholder="Enter subject">
+
+            <label for="taskDeadline">Deadline:</label>
+            <input type="date" id="taskDeadline">
+
+            <button id="addTaskBtn">Done</button>
+        </div>
+    </div>
+
+    <script src="../JS/home page.js"></script>
+</body>
+</html>

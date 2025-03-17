@@ -1,0 +1,65 @@
+@media (max-width: 425px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .welcome-section {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 0.9rem;
+    }
+
+    .login-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-card::before {
+        left: -10px;
+    }
+
+    .server-ip {
+        font-size: 12px;
+        right: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .checkbox-container {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    .forgot-pin {
+        font-size: 13px;
+        text-align: right;
+    }
+
+    .login-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

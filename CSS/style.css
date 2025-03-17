@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    ;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F9FC;
+    margin: 0;
+    padding-top: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-section {
+    width: 50%;
+    color: #333333;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.login-card {
+    width: 40%;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.login-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background: #7A5DC7;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.server-ip {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #9370DB;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 2px solid #9370DB;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 8px;
+    transition: 0.2s;
+}
+
+.checkbox-container input:checked + .checkmark {
+    background-color: #9370DB;
+    border-color: #9370DB;
+}
+
+.forgot-pin {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+}
+
+.forgot-pin:hover {
+    text-decoration: underline;
+}
+
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #FF9800;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #E68900;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .welcome-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .login-card {
+        width: 100%;
+    }
+}
